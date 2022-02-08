@@ -25,10 +25,6 @@
   text-transform: uppercase;
   color: var(--second-text);
 }
-.hero__button:hover,
-.hero__button:focus {
-  background: var(--background-button);
-}
 .hero__button {
   border: none;
   width: 200px;
@@ -43,6 +39,10 @@
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--background-button);
+  }
 }
 .hero__button-text {
   font-weight: bold;
