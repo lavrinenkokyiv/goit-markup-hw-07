@@ -46,10 +46,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address__link:hover,
-.address__link:focus {
-  color: var(--blue-text);
+  &:hover,
+  &:focus {
+    color: var(--blue-text);
+  }
 }
 .footer__join {
   margin-left: 70px;
@@ -81,10 +81,10 @@
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join__item:hover {
-  background: var(--blue-text);
-  cursor: pointer;
+  &:hover {
+    background: var(--blue-text);
+    cursor: pointer;
+  }
 }
 .join__icon {
   width: 20px;
