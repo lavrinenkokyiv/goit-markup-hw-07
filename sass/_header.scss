@@ -58,13 +58,13 @@
   background: var(--blue-text);
   border-radius: 2px;
 }
-.header-menu__links--actives::after {
+.header-menu__links--active-two::after {
   content: "";
   width: 78px;
   height: 4px;
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: -1.5px;
   left: 0;
   background: var(--blue-text);
   border-radius: 2px;
@@ -84,16 +84,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--blue-text);
+  }
 }
 .header-menu__item + .header-menu__item {
   margin-left: 50px;
 }
 .header-contacts__item + .header-contacts__item {
   margin-left: 30px;
-}
-.header-menu__link:hover,
-.header-menu__link:focus {
-  color: var(--blue-text);
 }
 .header-contacts__link {
   display: flex;
@@ -109,20 +109,20 @@
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-contacts__link:hover .envelope,
-.header-contacts__link:hover,
-.header-contacts__link:focus .envelope,
-.header-contacts__link:focus {
-  color: var(--blue-text);
-  fill: var(--blue-text);
-}
-.header-contacts__link:hover .smartphone,
-.header-contacts__link:hover,
-.header-contacts__link:focus .smartphone,
-.header-contacts__link:focus {
-  color: var(--blue-text);
-  fill: var(--blue-text);
+  &:hover .envelope,
+  &:hover,
+  &:focus .envelope,
+  &:focus {
+    color: var(--blue-text);
+    fill: var(--blue-text);
+  }
+  &:hover .smartphone,
+  &:hover,
+  &:focus .smartphone,
+  &:focus {
+    color: var(--blue-text);
+    fill: var(--blue-text);
+  }
 }
 .envelope {
   width: 16px;
